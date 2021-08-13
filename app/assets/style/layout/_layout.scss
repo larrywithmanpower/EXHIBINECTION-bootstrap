@@ -1,4 +1,12 @@
 
+.iconNum {
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  top: -15px;
+  right: -10px;
+}
+
 //  scroll bar
 .offcanvas-body {
   &::-webkit-scrollbar  {

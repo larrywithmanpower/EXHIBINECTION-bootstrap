@@ -75,6 +75,7 @@ $warning:       #D80EB1;//$yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$grayLight :     #EFEFEF; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +87,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "grayLight":  $grayLight,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -261,6 +263,9 @@ $spacers: (
   9: $spacer * 1.875,  //  30px
   10: $spacer * 2,  //  32px
   11: $spacer * 3,  //  48px
+  40: $spacer * 2.5,  //  40px
+  60: $spacer * 3.75,  //  60px
+  80: $spacer * 5,  //  80px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

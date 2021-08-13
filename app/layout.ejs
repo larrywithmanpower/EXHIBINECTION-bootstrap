@@ -18,7 +18,7 @@
   <nav class="navbar navbar-primary bg-white py-9 sticky-top">
     <div class="container justify-content-end">
       <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">EXHIBINECTION</a>
-      <ul class="list-unstyled d-flex align-items-center mb-0 ">
+      <ul class="list-unstyled d-flex align-items-center mb-0">
         <li class="me-10 d-none d-md-block">
           <a href="#" class="link-secondary">Sign in</a>
         </li>
@@ -26,8 +26,9 @@
           <a href="#" class="link-secondary">Sign up</a>
         </li>
         <li>
-          <a href="#" class="link-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          <a href="#" class="link-dark position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight">
+            <span class="iconNum bg-danger text-white rounded-circle px-2 py-1">3</span>
             <span class="material-icons pt-3">
               confirmation_number
             </span>
@@ -37,59 +38,23 @@
     </div>
   </nav>
 
-
-    <ul class="categoryList list-unstyled d-flex justify-content-md-center mb-0">
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          音樂
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          戲劇
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          設計
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          藝術
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          美食
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          旅遊
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          電影
-        </a>
-      </li>
-      <li class="categoryList__item">
-        <a href="#" class="link-secondary">
-          親子
-        </a>
-      </li>
-      <li class="categoryList__item me-0">
-        <a href="#" class="link-secondary">
-          期間限定
-        </a>
-      </li>
-    </ul>
-
   <%- contents %>
 
-    <footer class="footer">
-      footer
+    <footer class="py-6 py-md-8">
+      <div class="container d-flex justify-content-between">
+        <h2 class="h4 d-flex mb-0 align-items-md-center flex-column flex-md-row">
+          EXHIBINECTION
+          <span class="ms-md-5 fs-6">© 2020. All Rights Reserved.</span>
+        </h2>
+        <ul class="list-unstyled d-flex align-items-center mb-0">
+          <li class="me-10 d-none d-md-block text-end">
+            <a href="#" class="link-secondary">Sign in</a>
+          </li>
+          <li class="d-none d-md-block">
+            <a href="#" class="link-secondary">Sign up</a>
+          </li>
+        </ul> 
+      </div>
     </footer>
 
     <!-- canva -->
