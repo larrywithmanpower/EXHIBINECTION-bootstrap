@@ -1,6 +1,8 @@
 .banner {
   background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg?raw=true');
   height: 480px;
+  background-attachment: fixed;
+  background-size: cover;
   padding-left: 180px;
   @media (max-width: 414px) {
     padding-left: 0;
@@ -31,3 +33,28 @@
     }
   }
 }
+
+.livePeople {
+  position: relative;
+  &__author {
+    background-color: $dark;
+  }
+  &--bg {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true');
+    background-size: cover;
+  }
+  @media (max-width:414px) {
+    &__author {
+      background-color: #190014CC;
+      opacity: .8;
+      z-index: 1;
+    }
+    &--bg {
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
