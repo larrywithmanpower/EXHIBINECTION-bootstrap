@@ -59,7 +59,8 @@
       padding-bottom: 0;
       white-space:nowrap;
     }
-    &:hover {
+    &:hover,
+    &.active {
       border-color: $warning;
     }
   }
@@ -70,25 +71,25 @@
   &--art1 {
     height: 350px;
     background-size: cover;
-    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true');
+    background-image: url('../images/art1.jpg');
   }
   &--art2 {
     height: 350px;
     background-size: cover;
     background-position: center center;
-    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true');
+    background-image: url('../images/art2.jpg');
   }
   &--art3 {
     height: 350px;
     background-size: cover;
     background-position: center;
-    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true');
+    background-image: url('../images/art3.jpg');
   }
 }
 
 // subcribtion
 .subcribeBanner {
-  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true');
+  background-image: url('../images/subcribeBanner.jpg');
   height: 400px;
   background-attachment: fixed;
   background-size: cover;

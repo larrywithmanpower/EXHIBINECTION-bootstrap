@@ -1,0 +1,31 @@
+---
+title: Check Order
+layout: ./app/orderLayout.ejs
+engine: ejs
+current: orderCheck.html
+---
+
+<section class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- 購物進度條 -->
+      <div class="position-relative">
+        <div class="progress" style="height: 2px;">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
+        </div>
+        <div class="position-absolute top-0 start-10 translate-middle bg-info rounded-pill vertical-middle"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
+        <div class="position-absolute top-0 start-35 translate-middle bg-white border border-info rounded-pill  vertical-middle"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2">訂購資訊</p>
+        <div class="position-absolute top-0 start-65 translate-middle bg-white border border-info rounded-pill  vertical-middle" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
+        <div class="position-absolute top-0 start-90 translate-middle bg-white border border-info rounded-pill  vertical-middle" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
+      </div>
+    </div>
+  </div>
+</section>

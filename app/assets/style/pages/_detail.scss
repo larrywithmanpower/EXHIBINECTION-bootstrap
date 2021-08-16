@@ -1,0 +1,54 @@
+.card {
+  &__img {
+    height: 256px;
+    object-fit: cover;
+  }
+
+  &__text {
+    top: 13%;
+    right: 30px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.ticketType {
+  list-style: none;
+  &__item {
+    border-bottom: 1px solid transparent;
+    &:hover,
+    &.active {
+      border-color: $info;
+    }
+    a {
+      display: block;
+      padding: 0px 12px;
+    }
+  }
+}
+
+.dividedLine {
+  &::after {
+    content: '';
+    height: 255px;
+    width: 1px;
+    background-color: $secondary;
+  }
+}
+
+.detailBanner {
+  background-image: url('../images/detail1.jpg');
+  height: 400px;
+  background-attachment: fixed;
+}
+
+.detailImg {
+  height: 559px;
+  display: block;
+  object-fit: cover;
+}

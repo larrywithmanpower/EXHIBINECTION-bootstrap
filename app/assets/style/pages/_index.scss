@@ -1,5 +1,5 @@
 .banner {
-  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg?raw=true');
+  background-image: url('../images/indexBanner.jpg');
   height: 480px;
   background-attachment: fixed;
   background-size: cover;
@@ -36,21 +36,27 @@
 
 .livePeople {
   position: relative;
+  line-height: 30px;
   &__author {
+    width: 445px;
+    height: 482px;
     background-color: $dark;
+    opacity: .8;
   }
   &--bg {
-    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true');
+    position: absolute;
+    background-image: url('../images/people2.png');
     background-size: cover;
+    background-attachment: fixed;
+    height: 482px;
+    z-index: -1;
   }
   @media (max-width:414px) {
     &__author {
       background-color: #190014CC;
-      opacity: .8;
       z-index: 1;
     }
     &--bg {
-      position: absolute;
       background-repeat: no-repeat;
       top: 0;
       bottom: 0;
