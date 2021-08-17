@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-@import "functions";
-@import "./helpers/variables";
-@import "bootstrap";
-@import "./helpers//utils";
-@import "./base/base";
-
+@import 'functions';
+@import './helpers/variables';
+@import 'bootstrap';
+@import './helpers//utils';
+@import './base/base';
 
 @import './layout/layout';
 @import './pages/index';
 @import './pages/product';
 @import './pages/detail';
 @import './pages/order';
+

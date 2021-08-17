@@ -1,8 +1,8 @@
 ---
-title: Check Order
+title: Order Pay
 layout: ./app/orderLayout.ejs
 engine: ejs
-current: orderCheck.html
+current: orderPay.html
 ---
 
 <section class="container my-7">
@@ -15,27 +15,26 @@ current: orderCheck.html
         </div>
         <div class="position-absolute top-0 start-10 translate-middle bg-info rounded-pill vertical-middle"
           style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2 fw-bold">確認訂單</p>
-        <div
-          class="position-absolute top-0 start-35 translate-middle bg-white border border-info rounded-pill  vertical-middle"
+        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
+        <div class="position-absolute top-0 start-35 translate-middle bg-info rounded-pill vertical-middle"
           style="width: .5rem; height: .5rem;"></div>
         <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2">訂購資訊</p>
         <div
-          class="position-absolute top-0 start-65 translate-middle bg-white border border-info rounded-pill  vertical-middle"
+          class="position-absolute top-0 start-65 translate-middle bg-info rounded-pill vertical-middle"
           style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
+        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2 fw-bold">付款資訊</p>
         <div
           class="position-absolute top-0 start-90 translate-middle bg-white border border-info rounded-pill  vertical-middle"
           style="width: .5rem; height: .5rem;"></div>
         <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
       </div>
     </div>
-    <div class="col-lg-8 vh-pad-100 mt-11">
+    <div class="col-md-8 vh-pad-100 mt-md-56 mt-7 d-flex flex-column order-2 order-md-1">
       <ul class="list-unstyled orderCard">
         <li class="row align-items-md-center orderCard__item">
           <img src="./assets/images/product1.jpg" alt="product1" class="orderCard__img col-md-3 col-6 img-fluid">
           <ul class="col-md-9 col-6 list-unstyled d-flex align-items-md-center justify-content-between">
-            <li class="me-md-9 d-flex flex-column flex-grow-1 flex-md-grow-0">
+            <li class="me-lg-9 me-md-5 d-flex flex-column flex-grow-1 flex-md-grow-0">
               <h5 class="h6 mb-1 fw-bold d-flex align-items-center">
                 2020 台味設計展
                 <button type="button" class="btn-close ms-auto d-md-none" aria-label="Close"></button>
@@ -49,10 +48,23 @@ current: orderCheck.html
                 <span class="ms-auto text-dark fs-5 fw-bold d-md-none">NT$350</span>
               </span>
             </li>
-            <li class="me-md-56 d-none d-md-block">
+            <li class="me-lg-56 d-none d-md-block text-center p-md-3 p-0 p-lg-0">
               <h5 class="fw-bold">NT$350</h5>
+              <div class="d-md-flex align-items-center d-none d-lg-none">
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                </a>
+                <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </a>
+              </div>
             </li>
-            <li class="d-none d-md-block">
+            <li class="d-none d-lg-block">
               <div class="d-flex align-items-center">
                 <a href="#" class="link-dark">
                   <span class="material-icons">
@@ -75,7 +87,7 @@ current: orderCheck.html
         <li class="row align-items-md-center orderCard__item">
           <img src="./assets/images/product2.jpg" alt="product1" class="orderCard__img col-md-3 col-6 img-fluid">
           <ul class="col-md-9 col-6 list-unstyled d-flex align-items-md-center justify-content-between">
-            <li class="me-md-9 d-flex flex-column flex-grow-1 flex-md-grow-0">
+            <li class="me-lg-9 me-md-5 d-flex flex-column flex-grow-1 flex-md-grow-0">
               <h5 class="h6 mb-1 fw-bold d-flex align-items-center">
                 No.22 線上設計展
                 <button type="button" class="btn-close ms-auto d-md-none" aria-label="Close"></button>
@@ -89,10 +101,23 @@ current: orderCheck.html
                 <span class="ms-auto text-dark fs-5 fw-bold d-md-none">NT$350</span>
               </span>
             </li>
-            <li class="me-md-56 d-none d-md-block">
+            <li class="me-lg-56 d-none d-md-block text-center p-md-3 p-0 p-lg-0">
               <h5 class="fw-bold">NT$350</h5>
+              <div class="d-md-flex align-items-center d-none d-lg-none">
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                </a>
+                <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </a>
+              </div>
             </li>
-            <li class="d-none d-md-block">
+            <li class="d-none d-lg-block">
               <div class="d-flex align-items-center">
                 <a href="#" class="link-dark">
                   <span class="material-icons">
@@ -115,7 +140,7 @@ current: orderCheck.html
         <li class="row align-items-md-center orderCard__item">
           <img src="./assets/images/product3.jpg" alt="product1" class="orderCard__img col-md-3 col-6 img-fluid">
           <ul class="col-md-9 col-6 list-unstyled d-flex align-items-md-center justify-content-between">
-            <li class="me-md-9 d-flex flex-column flex-grow-1 flex-md-grow-0">
+            <li class="me-lg-9 me-md-5 d-flex flex-column flex-grow-1 flex-md-grow-0">
               <h5 class="h6 mb-1 fw-bold d-flex align-items-center">
                 高雄設計節
                 <button type="button" class="btn-close ms-auto d-md-none" aria-label="Close"></button>
@@ -129,10 +154,23 @@ current: orderCheck.html
                 <span class="ms-auto text-dark fs-5 fw-bold d-md-none">NT$350</span>
               </span>
             </li>
-            <li class="me-md-56 d-none d-md-block">
+            <li class="me-lg-56 d-none d-md-block text-center p-md-3 p-0 p-lg-0">
               <h5 class="fw-bold">NT$350</h5>
+              <div class="d-md-flex align-items-center d-none d-lg-none">
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                </a>
+                <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+                <a href="#" class="link-dark">
+                  <span class="material-icons">
+                    add
+                  </span>
+                </a>
+              </div>
             </li>
-            <li class="d-none d-md-block">
+            <li class="d-none d-lg-block">
               <div class="d-flex align-items-center">
                 <a href="#" class="link-dark">
                   <span class="material-icons">
@@ -153,13 +191,40 @@ current: orderCheck.html
           </ul>
         </li>
       </ul>
+      <div class="col-md-3 mt-auto d-flex justify-content-between">
+        <a href="orderInfo.html" class="btn btn-outline-primary w-100 py-3 me-3 ">返回</a>
+        <a href="finished.html" class="btn btn-info w-100 py-3 d-block d-md-none">下一步</a>
+      </div>
     </div>
-    <div class="col-md-4 mt-auto ms-auto">
-      <h5 class="d-flex align-items-center fw-bold mb-4">
+    <div class="col-md-4 mt-52 order-1 order-md-2 d-flex flex-column">
+      <h3 class="fs-5 lh-30 fw-bold">付款資訊</h3>
+      <form>
+        <div class="mb-6">
+          <label for="creaditCard" class="form-label">信用卡帳號</label>
+          <input type="number" class="form-control" id="creaditCard" placeholder="Xxxx-xxxx-xxxx-xxxx">
+        </div>
+        <div class="mb-6">
+          <label for="date" class="form-label">有效日期</label>
+          <input type="number" class="form-control" id="date" placeholder="(MM/YY)">
+        </div>
+        <div class="mb-6">
+          <label for="password" class="form-label">安全碼</label>
+          <input type="password" class="form-control" id="password" placeholder="***">
+        </div>
+      </form>
+      <span class="d-flex align-items-center fs-6 mb-2 mt-auto">
         小計
-        <span class="ms-auto">NT$1050</span>
-      </h5>
-      <a href="orderInfo.html" class="btn btn-info w-100 py-3">
+        <span class="ms-auto text-muted">NT$1050</span>
+      </span>
+      <span class="d-flex align-items-center fs-6 mb-2">
+        折扣
+        <span class="ms-auto text-muted">-NT$50</span>
+      </span>
+      <span class="d-flex align-items-center fs-5 lh-30 fw-bold mb-4">
+        總金額
+        <span class="ms-auto text-muted">NT$1000</span>
+      </span>
+      <a href="finished.html" class="btn btn-info w-100 py-3 d-md-block d-none">
         下一步
       </a>
     </div>

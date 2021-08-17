@@ -1,3 +1,15 @@
+
+//  order utils
 .vertical-middle {
   margin-top: 1px;
+}
+
+
+// orderCheck card
+.orderCard {
+  padding-inline-start: 0px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
 }
