@@ -11,6 +11,7 @@
   <link rel="icon" href="./assets/images/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -110,7 +111,7 @@
           OCT
         </p>
       </div>
-      <a href="#" class="stretched-link"></a>
+      <a href="detail.html" class="stretched-link"></a>
     </div>
   </div>
 </section>
@@ -169,183 +170,160 @@
   </div>
 </section>
 
-  <section class="container pb-7 pb-md-60">
-    <h2 class="fs-32 fw-bold mb-2 mb-md-7">猜你也喜歡...</h2>
-    <div class="row">
-      <div class="col-md-4 ms-auto mb-3">
-        <div class="photo--art1 mb-1"></div>
-        <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
-        <p class="fs-5 mb-0">$350</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="photo--art2"></div>
-        <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
-        <p class="fs-5 mb-0">$350</p>
-      </div>
-      <div class="col-md-3">
-        <div class="photo--art3"></div>
-        <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
-        <p class="fs-5 mb-0">$350</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="subcribeBanner bg-cover">
-    <div
-      class="container d-flex align-items-end justify-content-start h-100">
-      <h2 class="text-white fw-bold">
-        想收到最新消息嗎？<br> 快訂閱我們！
-        <div class="input-group mt-4">
-          <input type="text" class="form-control p-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-info px-52 py-4" type="button" id="button-addon2">訂閱</button>
+    <section class="container pb-7 pb-md-60">
+      <h2 class="fs-32 fw-bold mb-2 mb-md-7">猜你也喜歡...</h2>
+      <div class="ps-lg-100">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide ms-auto">
+              <div class="photo--art1 mb-1"></div>
+              <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
+              <p class="fs-5 mb-0">$350</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="photo--art2"></div>
+              <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
+              <p class="fs-5 mb-0">$350</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="photo--art3"></div>
+              <h5 class="fw-bold mb-1">No.22 線上設計展</h5>
+              <p class="fs-5 mb-0">$350</p>
+            </div>
+          </div>
         </div>
-      </h2>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer class="py-6 py-md-8">
-    <div class="container d-flex justify-content-between">
-      <h2 class="h4 d-flex mb-0 align-items-md-center flex-column flex-md-row">
-        EXHIBINECTION
-        <span class="ms-md-5 fs-6">© 2020. All Rights Reserved.</span>
-      </h2>
-      <ul class="list-unstyled d-flex align-items-center mb-0">
-        <li class="me-10 d-none d-md-block text-end">
-          <a href="#" class="link-secondary">Sign in</a>
-        </li>
-        <li class="d-none d-md-block">
-          <a href="#" class="link-secondary">Sign up</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <section class="subcribeBanner bg-cover">
+      <div class="container d-flex align-items-end h-100">
+        <h2 class="text-white fw-bold">
+          想收到最新消息嗎？<br> 快訂閱我們！
+          <div class="input-group mt-4">
+            <input type="text" class="form-control p-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-info px-52 py-4" type="button" id="button-addon2">訂閱</button>
+          </div>
+        </h2>
+      </div>
+    </section>
 
-  <!-- canva -->
-  <div class="offcanvas offcanvas-end bg-dark p-md-5" tabindex="-1" id="offcanvasRight" data-bs-scroll="true"
-    data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header text-white">
-      <h5 id="offcanvasRightLabel" class="fs-2">Cart List</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded mb-2">
-        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
-          aria-label="Close"></button>
-        <img
-          src="./assets/images/product1.jpg"
-          alt="" class="canvas__img me-3">
-        <ul class="d-flex flex-column list-unstyled text-dark mb-0">
-          <li>
-            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
+    <footer class="py-6 py-md-8">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="h4 d-flex mb-0 align-items-md-center flex-column flex-md-row link-dark">
+          EXHIBINECTION
+          <p class="ms-md-5 mb-0 fs-6">© 2020. All Rights Reserved.</p>
+        </a>
+        <ul class="list-unstyled d-flex align-items-center mb-0">
+          <li class="me-10 d-none d-md-block text-end">
+            <a href="#" class="link-secondary">Sign in</a>
           </li>
-          <li>
-            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
-          </li>
-          <li>
-            <h3 class="fs-6">全票</h3>
-          </li>
-          <li class="mt-auto">
-            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
+          <li class="d-none d-md-block">
+            <a href="#" class="link-secondary">Sign up</a>
           </li>
         </ul>
-        <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              remove
-            </span>
-          </a>
-          <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              add
-            </span>
-          </a>
-        </div>
       </div>
-      <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded mb-2">
-        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
-          aria-label="Close"></button>
-        <img
-          src="./assets/images/product2.jpg"
-          alt="" class="canvas__img me-3">
-        <ul class="d-flex flex-column list-unstyled text-dark mb-0">
-          <li>
-            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
-          </li>
-          <li>
-            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
-          </li>
-          <li>
-            <h3 class="fs-6">全票</h3>
-          </li>
-          <li class="mt-auto">
-            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
-          </li>
-        </ul>
-        <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              remove
-            </span>
-          </a>
-          <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              add
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded">
-        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
-          aria-label="Close"></button>
-        <img
-          src="./assets/images/product3.jpg"
-          alt="" class="canvas__img me-3">
-        <ul class="d-flex flex-column list-unstyled text-dark mb-0">
-          <li>
-            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
-          </li>
-          <li>
-            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
-          </li>
-          <li>
-            <h3 class="fs-6">全票</h3>
-          </li>
-          <li class="mt-auto">
-            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
-          </li>
-        </ul>
-        <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              remove
-            </span>
-          </a>
-          <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
-          <a href="#" class="link-dark">
-            <span class="material-icons">
-              add
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-between px-5 pt-8">
-      <h3 class="text-white fs-5 mb-0">
-        <span class="me-7">小計</span>
-        <span>NT$1050</span>
-      </h3>
-      <a href="orderCheck.html" class="btn btn-light">前往結帳</a>
-    </div>
-  </div>
+    </footer>
 
-  <script src="./assets/js/vendors.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="./assets/js/all.js"></script>
+    <!-- canva -->
+    <div class="offcanvas offcanvas-end bg-dark p-md-5" tabindex="-1" id="offcanvasRight" data-bs-scroll="true"
+      data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header text-white">
+        <h5 id="offcanvasRightLabel" class="fs-2">Cart List</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded mb-2">
+          <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
+            aria-label="Close"></button>
+          <img src="./assets/images/product1.jpg" alt="" class="canvas__img me-3">
+          <div class="d-flex flex-column list-unstyled text-dark mb-0">
+            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
+            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+            <h3 class="fs-6">全票</h3>
+            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
+          </div>
+          <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                remove
+              </span>
+            </a>
+            <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                add
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded mb-2">
+          <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
+            aria-label="Close"></button>
+          <img src="./assets/images/product2.jpg" alt="" class="canvas__img me-3">
+          <div class="d-flex flex-column list-unstyled text-dark mb-0">
+            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
+            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+            <h3 class="fs-6">全票</h3>
+            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
+          </div>
+          <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                remove
+              </span>
+            </a>
+            <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                add
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex position-relative bg-white px-md-10 px-5 py-md-7 pt-10 pb-5 rounded">
+          <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 p-2"
+            aria-label="Close"></button>
+          <img src="./assets/images/product3.jpg" alt="" class="canvas__img me-3">
+          <div class="d-flex flex-column list-unstyled text-dark mb-0">
+            <h3 class="h6 fw-bold mb-1">2020 台味設計展</h3>
+            <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+            <h3 class="fs-6">全票</h3>
+            <p class="lh-30 fw-bold mb-0 text-bottom">NT$350</p>
+          </div>
+          <div class="d-flex flex-column flex-md-row ms-auto align-items-center">
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                remove
+              </span>
+            </a>
+            <p class="px-4 mb-2 fw-bold fs-5 lh-30">01</p>
+            <a href="#" class="link-dark">
+              <span class="material-icons">
+                add
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between px-5 pt-8">
+        <h3 class="text-white fs-5 mb-0">
+          <span class="me-7">小計</span>
+          <span>NT$1050</span>
+        </h3>
+        <a href="orderCheck.html" class="btn btn-light">前往結帳</a>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>
